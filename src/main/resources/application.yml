@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.102.204.6:3306/bibibibi?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: root
+
+mybatis:
+  mapper-locations: classpath:mapper/*/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    mapUnderscoreToCamelCase: true
+    jdbc-type-for-null: null
+    local-cache-scope: statement
+shiro:
+  loginUrl: /login
+  unauthorizedUrl: /notLogin
